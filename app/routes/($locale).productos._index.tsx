@@ -30,13 +30,13 @@ export async function loader({request, context: {storefront}}: LoaderArgs) {
     url: request.url,
     collection: {
       id: 'all-products',
-      title: 'All Products',
+      title: 'Todos los Productos',
       handle: 'products',
-      descriptionHtml: 'All the store products',
-      description: 'All the store products',
+      descriptionHtml: 'Todos los productos de la tienda',
+      description: 'Todos los productos de la tienda',
       seo: {
-        title: 'All Products',
-        description: 'All the store products',
+        title: 'Todos los productos de la tienda',
+        description: 'Todos los productos de la tienda',
       },
       metafields: [],
       products: data.products,
