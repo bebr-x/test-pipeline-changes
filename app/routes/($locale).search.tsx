@@ -43,10 +43,10 @@ export async function loader({request, context: {storefront}}: LoaderArgs) {
     url: request.url,
     collection: {
       id: 'search',
-      title: 'Search',
+      title: 'Suche',
       handle: 'search',
-      descriptionHtml: 'Search results',
-      description: 'Search results',
+      descriptionHtml: 'Suchergebnisse',
+      description: 'Suchergebnisse',
       seo: {
         title: 'Search',
         description: `Showing ${products.nodes.length} search results for "${searchTerm}"`,
@@ -82,7 +82,7 @@ export default function Search() {
           <Input
             defaultValue={searchTerm}
             name="q"
-            placeholder="Search…"
+            placeholder="Suche…"
             type="search"
             variant="search"
           />
@@ -143,7 +143,7 @@ function NoResults({
       {noResults && (
         <Section padding="x">
           <Text className="opacity-50">
-            No results, try a different search.
+Keine Ergebnisse, versuchen Sie es mit einer anderen Suche.
           </Text>
         </Section>
       )}
